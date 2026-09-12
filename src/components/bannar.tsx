@@ -4,9 +4,9 @@ const Bannar = () => {
     return (
      <>
      <div className=' flex justify-center items-center text-left container mx-auto gap-10 my-20'>
-        <div className='  gap-5 snap-align-n container mx-auto '>
+        <div className='  gap-5 snap-align-n container mx-auto  max-w-lg'>
         <h2 className='text-5xl font-extrabold'> Build Your Ideal </h2>
-        <h2 className='text-5xl font-extrabold bg-linear-to-r from-amber-500 via-pink-600 to-purple-800 bg-clip-text text-transparent'>
+        <h2 className=' inline-block text-5xl font-extrabold bg-linear-to-r from-amber-500 via-pink-600 to-purple-800 bg-clip-text text-transparent'>
   Development Stack</h2>
         <p className='text-lg mt-4'>Explore frontend, backend, database, and tooling options,
 compare them side by side, and put together the stack that fits your
