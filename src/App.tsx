@@ -5,6 +5,7 @@ import Nav from "./components/nav";
 import TechnologiesCard from "./components/technologiescard";
 import type { ItechnologiesCardType } from "./types/technologiescardtype";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const technologiesCardFetch = async (): Promise<ItechnologiesCardType[]> => {

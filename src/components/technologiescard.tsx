@@ -22,10 +22,11 @@ const TechnologiesCard = ({
             technologies,
         ]);
                 toast.success(`${technologies.name} added to your stack!`);
+               
     };
 
     return (
-        <div className="container mx-auto transition ">
+        <div className="container mx-auto mb-20 ">
             <div className='py-10 space-y-2'>
             <h2 className='inline-block text-5xl font-extrabold '>Explore the</h2><h2 className=' inline-block text-5xl font-extrabold bg-linear-to-r from-amber-500 via-pink-600 to-purple-800 bg-clip-text text-transparent'>Technologies</h2>
             <p className='text-gray-500'>Pick one technology per category to built your ideal stack.</p>

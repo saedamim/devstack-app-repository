@@ -3,8 +3,8 @@ import logo from '../assets/logo-text.png'
 const Footer = () => {
     return (
         <>
-        <div className='container mx-auto  px-8 my-10'>
-        <div className='flex justify-between  my-20'>
+        <div className='container mx-auto   px-8 my-10'>
+        <div className='flex justify-between  my-10'>
         <div>
             <img src={logo} alt="Logo" />
             <p className='text-gray-500'>Curated tools, technologies, and resources for developers building
@@ -42,7 +42,7 @@ modern software.</p>
             </ul>
         </div>
         </div>
-<div className='flex justify-between container mx-auto my-10 border-t border-gray-400 pt-5'>
+<div className='flex justify-between container mx-auto my-5 border-t border-gray-400 pt-5'>
     <p className='text-gray-500'>© 2023 DevStack. All rights reserved.</p>
     <ul className='flex gap-5 text-gray-400'>
         <li>Privacy</li>
