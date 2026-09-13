@@ -40,7 +40,7 @@ const TechnologiesCard = ({
 
                                 <div
                                     key={technologies.id}
-                                    className={`border  rounded-xl p-5 shadow-sm hover:shadow-md transition ${isAdded ? " border-pink-600"
+                                    className={`border  rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-4 transition-all duration-300 ${isAdded ? " border-pink-600 "
                                         :"border-gray-200"
                                     }`}
                                 >
