@@ -4,7 +4,7 @@ const Nav = () => {
     return (
         <>
  <nav className='fixed top-0 left-0 right-0  z-50 bg-white shadow-sm '>
-     <div className='flex justify-between container mx-auto my-5' >
+     <div className='flex justify-between container mx-auto items-center my-5' >
          <img src= {logo} />
         <ul className='flex gap-10 font-light'>
            <li className='text-pink-500'>Home</li>

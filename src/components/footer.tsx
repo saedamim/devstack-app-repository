@@ -9,14 +9,15 @@ const Footer = () => {
             <img src={logo} alt="Logo" />
             <p className='text-gray-500'>Curated tools, technologies, and resources for developers building
 modern software.</p>
-           <ul className='flex gap-5 '>
+           <ul className='flex gap-5 my-5'>
                 <li><a href="https://github.com">Github</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="https://linkedin.com">LinkedIn</a></li>
             </ul>
         </div>
         <div>
-            <p className='text-black' font-weight='bold'>PRODUCT</p>
+            <p style={{ fontWeight: "bold" }}>
+  PRODUCT</p>
             <ul className='text-gray-500'>
                 <li>Home</li>
                 <li>Technologies</li>
@@ -24,7 +25,8 @@ modern software.</p>
             </ul>
         </div>
         <div>
-            <p className='text-black' font-weight='bold'>COMPANY</p>
+            <p style={{ fontWeight: "bold" }}>
+  COMPANY</p>
             <ul className='text-gray-500'>
                 <li>About</li>
                 <li>Contact</li>
@@ -32,7 +34,8 @@ modern software.</p>
             </ul>
         </div>
         <div>
-            <p className='text-black' font-weight='bold'>LEGAL</p>
+            <p style={{ fontWeight: "bold" }}>
+  LEGAL</p>
             <ul className='text-gray-500'>
                 <li>Privacy Policy</li>
                 <li>Terms of Service</li>
