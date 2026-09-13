@@ -3,6 +3,7 @@ import { type ItechnologiesCardType } from '../types/technologiescardtype';
 import Yourstack from './yourstack';
 import { TiStar } from "react-icons/ti";
 import { GiCheckMark } from "react-icons/gi";
+import {  toast } from 'react-toastify';
 
 interface TechnologiesCardProps {
     technologiesCardPromise: Promise<ItechnologiesCardType[]>;
@@ -13,14 +14,14 @@ const TechnologiesCard = ({
 }: TechnologiesCardProps) => {
 
     const technologiesCard = use(technologiesCardPromise);
-
-    const [yourStack, setYourStack] = useState<ItechnologiesCardType[]>([]);
+        const [yourStack, setYourStack] = useState<ItechnologiesCardType[]>([]);
 
     const addToStack = (technologies: ItechnologiesCardType) => {
         setYourStack((previousStack) => [
             ...previousStack,
-            technologies
+            technologies,
         ]);
+                toast.success(`${technologies.name} added to your stack!`);
     };
 
     return (
