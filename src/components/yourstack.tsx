@@ -1,5 +1,6 @@
 import { VscClose } from "react-icons/vsc";
 import type { ItechnologiesCardType } from "../types/technologiescardtype";
+import { toast } from "react-toastify";
 
 interface YourstackProps {
     technologiesCard: ItechnologiesCardType[];
@@ -14,15 +15,22 @@ const Yourstack = ({
 }: YourstackProps) => {
 
     const removeFromStack = (id: number) => {
+        const removedTechnology = technologiesCard.find(
+            (technologies) => technologies.id === id
+        );
         setYourStack((previousStack) =>
             previousStack.filter(
                 (technologies) => technologies.id !== id
             )
         );
+         toast.success(`${removedTechnology?.name} removed from your stack!`);
     };
     const removeAll = () => {
         setYourStack([]);
+         toast.success("All technologies removed from your stack!");
     };
+
+     
 
     return (
         <div className="min-w-xs h-fit border border-gray-200 rounded-xl p-5">
