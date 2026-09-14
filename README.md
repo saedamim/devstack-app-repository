@@ -42,5 +42,6 @@ ans:key is a unique identity for every list item, it helps to react for track ch
 
 ## 6.What is conditional rendering? Show one place you used it (example: the empty stack message).
 ans:It helps React  to know which item was changed, added, or removed.
-##7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+## 7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 ans:In React data usually moves between parent and child using props.
